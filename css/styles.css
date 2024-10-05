@@ -4,99 +4,98 @@ body {
     padding: 0px;
 }
 
-
 nav {
     background-color: rgba(65, 185, 51, 0.264);
     color: black;
     padding: 10px;
-    width: 280px; /* Ограниченная ширина навигационного меню */
+    width: 280px;
 }
 
 .nav-links {
-    display: flex; /* Используем Flexbox для расположения ссылок */
-    flex-direction: column; /* Располагаем ссылки в столбик */
-    align-items: flex-start; /* Центрируем ссылки по горизонтали */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 nav a {
-    color: black; /* Цвет текста ссылок */
-    text-decoration: none ; /* Убираем подчеркивание */
-    margin: 0px 0; /* Отступы между ссылками */
+    color: black;
+    text-decoration: none;
+    margin: 0px 0;
     font-size: 20px;
     text-align: right;
 }
 
 nav div {
-    display: inline; /* Изменено с ul на div для навигации */
+    display: inline;
     margin-right: 20px;
 }
 
 nav a:hover {
-    background-color: rgba(167, 48, 218, 0.873); /* Добавляем эффект при наведении */
+    background-color: rgba(167, 48, 218, 0.873);
 }
 
 main {
-    padding: 10px; /* Отступы для основного контента */
+    padding: 10px;
 }
 
 section {
-    margin: 20px 0; /* Отступы между секциями */
-    border-style: solid; /* Стиль границы */
+    margin: 20px 0;
+    border-style: solid;
 }
 
 .card {
-    border: none; /* Граница для карточек по странам */
-    margin-bottom: 20px; /* Отступ между карточками */
-    padding: 15px; /* Внутренние отступы */
+    border: none;
+    margin-bottom: 20px;
+    padding: 15px;
 }
 
 .car-container {
-    display: flex; /* Используем Flexbox для размещения автомобилей */
-    justify-content: center; /* Центрируем автомобили по горизонтали */
-    flex-wrap: wrap; /* Позволяет переносить элементы на новую строку при недостатке места */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .car-item {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение текста и изображения */
-    align-items: center; /* Центрируем содержимое по горизонтали */
-    margin: 0 100px; /* Отступ между автомобилями внутри одной карточки */
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px;
 }
 
 .car-item img {
-    width: 320px; /* Устанавливаем фиксированную ширину для всех изображений */
-    height: 320px; /* Автоматическая высота для сохранения пропорций */
-    object-fit: cover; /* Сохраняем пропорции изображения и обрезаем его при необходимости */
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
 }
 
-/* Стили для характеристик под изображениями */
+
 .car-item ul {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding-left: 0; /* Убираем отступ слева */
-    text-align: center; /* Центрируем текст списка */
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
 }
 
 .section-title {
-    text-align: center; /* Центрируем заголовок секции */
+    text-align: center;
 }
 
-/* Стили для горизонтальной линии разделителя */
+
 .section-divider {
-    width: 50%; /* Ширина линии разделителя */
-    margin-left: auto; /* Центрируем линию разделителя */
+    width: 50%;
+    margin-left: auto;
     margin-right: auto;
-    border-top: 2px solid #000; /* Черная линия */
+    border-top: 2px solid #000;
 }
 
 .business-card {
-    padding: 0px; /* Внутренние отступы */
-    border-radius: 5px; /* Закругленные углы */
-    text-align: left; /* Центрируем содержимое */
+    padding: 0px;
+    border-radius: 5px;
+    text-align: left;
 }
 
 .business-card-image {
-    max-width: 300px; /* Ограничиваем ширину изображения до 100% родительского элемента */
-    height: 150px; /* Автоматическая высота для сохранения пропорций */
+    max-width: 300px;
+    height: 150px;
 }
 
 
@@ -104,6 +103,7 @@ li {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: larger;
 }
+
 @media (max-width: 768px) {
     .card {
         flex-basis: calc(50% - 20px);
@@ -115,28 +115,29 @@ li {
         flex-basis: 100%;
     }
 }
-@media (max-width: 320px){
+
+@media (max-width: 320px) {
     .car-item img {
-        width: 250px; /* Устанавливаем фиксированную ширину для всех изображений */
-        height: 250px; /* Автоматическая высота для сохранения пропорций */
-        object-fit: cover; /* Сохраняем пропорции изображения и обрезаем его при необходимости */
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
     }
-    
+
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
     .car-item img {
-        width: 200px; /* Устанавливаем фиксированную ширину для всех изображений */
-        height: 200px; /* Автоматическая высота для сохранения пропорций */
-        object-fit: cover; /* Сохраняем пропорции изображения и обрезаем его при необходимости */
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
-    
+
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
     .business-card-image {
-        max-width: 300px; /* Ограничиваем ширину изображения до 100% родительского элемента */
-        height: 150px; /* Автоматическая высота для сохранения пропорций */
+        max-width: 300px;
+        height: 150px;
     }
-    
+
 }
