@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0px;
+}
+
+
+nav {
+    background-color: rgba(65, 185, 51, 0.264);
+    color: black;
+    padding: 10px;
+    width: 280px; /* Ограниченная ширина навигационного меню */
+}
+
+.nav-links {
+    display: flex; /* Используем Flexbox для расположения ссылок */
+    flex-direction: column; /* Располагаем ссылки в столбик */
+    align-items: flex-start; /* Центрируем ссылки по горизонтали */
+}
+
+nav a {
+    color: black; /* Цвет текста ссылок */
+    text-decoration: none ; /* Убираем подчеркивание */
+    margin: 0px 0; /* Отступы между ссылками */
+    font-size: 20px;
+    text-align: right;
+}
+
+nav div {
+    display: inline; /* Изменено с ul на div для навигации */
+    margin-right: 20px;
+}
+
+nav a:hover {
+    background-color: rgba(167, 48, 218, 0.873); /* Добавляем эффект при наведении */
+}
+
+main {
+    padding: 10px; /* Отступы для основного контента */
+}
+
+section {
+    margin: 20px 0; /* Отступы между секциями */
+    border-style: solid; /* Стиль границы */
+}
+
+.card {
+    border: none; /* Граница для карточек по странам */
+    margin-bottom: 20px; /* Отступ между карточками */
+    padding: 15px; /* Внутренние отступы */
+}
+
+.car-container {
+    display: flex; /* Используем Flexbox для размещения автомобилей */
+    justify-content: center; /* Центрируем автомобили по горизонтали */
+    flex-wrap: wrap; /* Позволяет переносить элементы на новую строку при недостатке места */
+}
+
+.car-item {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение текста и изображения */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    margin: 0 100px; /* Отступ между автомобилями внутри одной карточки */
+}
+
+.car-item img {
+    width: 320px; /* Устанавливаем фиксированную ширину для всех изображений */
+    height: 320px; /* Автоматическая высота для сохранения пропорций */
+    object-fit: cover; /* Сохраняем пропорции изображения и обрезаем его при необходимости */
+}
+
+/* Стили для характеристик под изображениями */
+.car-item ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding-left: 0; /* Убираем отступ слева */
+    text-align: center; /* Центрируем текст списка */
+}
+
+.section-title {
+    text-align: center; /* Центрируем заголовок секции */
+}
+
+/* Стили для горизонтальной линии разделителя */
+.section-divider {
+    width: 50%; /* Ширина линии разделителя */
+    margin-left: auto; /* Центрируем линию разделителя */
+    margin-right: auto;
+    border-top: 2px solid #000; /* Черная линия */
+}
+
+.business-card {
+    padding: 0px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругленные углы */
+    text-align: left; /* Центрируем содержимое */
+}
+
+.business-card-image {
+    max-width: 300px; /* Ограничиваем ширину изображения до 100% родительского элемента */
+    height: 150px; /* Автоматическая высота для сохранения пропорций */
+}
+
+
+li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+}
+@media (max-width: 768px) {
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 320px){
+    .car-item img {
+        width: 250px; /* Устанавливаем фиксированную ширину для всех изображений */
+        height: 250px; /* Автоматическая высота для сохранения пропорций */
+        object-fit: cover; /* Сохраняем пропорции изображения и обрезаем его при необходимости */
+    }
+    
+}
+
+@media (max-width: 375px){
+    .car-item img {
+        width: 200px; /* Устанавливаем фиксированную ширину для всех изображений */
+        height: 200px; /* Автоматическая высота для сохранения пропорций */
+        object-fit: cover; /* Сохраняем пропорции изображения и обрезаем его при необходимости */
+    }
+    
+}
+
+@media (max-width: 320px){
+    .business-card-image {
+        max-width: 300px; /* Ограничиваем ширину изображения до 100% родительского элемента */
+        height: 150px; /* Автоматическая высота для сохранения пропорций */
+    }
+    
+}
